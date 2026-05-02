@@ -52,7 +52,7 @@ export default function Authentication() {
         }));
 console.log(response.data.user._id);
         alert("Login successful");
-        const redirectTo = location.state?.from || "/home";
+        const redirectTo = location.state?.from || "/";
                 navigate(redirectTo);
       }
 
