@@ -14,9 +14,9 @@ function App() {
   return (
  <Router>
     <Routes>
-       <Route path="/" element={<Navigate to="/home" />} />
+       <Route path="/" element={<Listings/>} />
         <Route path="/user/auth" element={<Authentication/>} />
-       <Route path="/home" element={<Listings/>} />
+       <Route path="/" element={<Listings/>} />
        <Route path="/listing/:id" element={<ShowlistingData/>} />
         <Route path="/listings/add" element={<Createlistings/>} />
          <Route path="/update-listing" element={<UpdateListings/>} />

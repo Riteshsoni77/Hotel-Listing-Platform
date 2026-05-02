@@ -14,7 +14,7 @@ const navigate = useNavigate();
             </div>
             <ul className="navbar-links">
                 <li>
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 {authData ? (
                     <>
@@ -22,7 +22,7 @@ const navigate = useNavigate();
                             <a
                                 onClick={() => {
                                     localStorage.removeItem("authData");
-                                    navigate("/home");
+                                    navigate("/");
                                 }}
                             >
                                 Logout

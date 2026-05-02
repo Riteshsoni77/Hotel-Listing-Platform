@@ -63,7 +63,7 @@ export default function CreateListings() {
 
             console.log("Form Data Submitted Successfully:", response.data);
             alert("Listing created successfully!");
-            navigate("/home");
+            navigate("/");
 
         } catch (error) {
             console.error("Error submitting form data:", error);
