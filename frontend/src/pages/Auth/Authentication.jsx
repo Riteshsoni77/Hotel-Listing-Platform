@@ -35,7 +35,7 @@ export default function Authentication() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/user/login",
+      const response = await axios.post(`${server}/user/login`,
         {
 
           username: formData.username,
@@ -65,7 +65,7 @@ console.log(response.data.user._id);
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/user/register",
+      await axios.post(`${server}/user/register`,
         {
           name: formData.name,
           username: formData.username,

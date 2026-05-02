@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./ListingCard.css";
+import server from "../../../environment";
 export default function Card({ listing }) {
     console.log(" this is listings ", listing);
     const navigate = useNavigate();
@@ -13,7 +14,7 @@ export default function Card({ listing }) {
                 <img
                     className="cardImage"
                     // src={listing.image}
-                     src={`http://localhost:8000${listing.image}`}
+                     src={`${server}${listing.image}`}
                     alt={listing.title}
                 />
                 <div>
