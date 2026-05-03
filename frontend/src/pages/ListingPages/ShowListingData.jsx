@@ -156,6 +156,7 @@ export default function ShowlistingData() {
                         </Grid>
                     </CardContent>
                     {userid === listingdata.owner?._id ? <Button
+                   
                         type="submit"
                         variant="contained"
                         color="primary"
@@ -172,9 +173,11 @@ export default function ShowlistingData() {
 
                     >
                         Edit
-                    </Button> : <></>}
+                        
+                     </Button> : <></>}
 
                     {userid === listingdata.owner?._id ? <Button
+                   
                         type="submit"
                         variant="contained"
                         color="primary"
@@ -190,8 +193,8 @@ export default function ShowlistingData() {
                         }}
 
                     >
-                        Delete
-                    </Button> : <></>}
+                        Delete 
+                     </Button> : <></>}
                 </Card>
 
                 <Grid sx={{ margin: "20px" }} >
