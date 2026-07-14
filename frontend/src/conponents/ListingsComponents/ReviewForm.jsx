@@ -44,7 +44,7 @@ export default function ReviewForm({ id,onAddReview }) {
 
         try {
 
-            const res = await axios.post(`http://localhost:8000/listings/${id}/reviews`,
+            const res = await axios.post(`${server}/listings/${id}/reviews`,
 
                  {
                 review: {

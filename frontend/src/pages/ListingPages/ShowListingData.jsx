@@ -111,7 +111,7 @@ export default function ShowlistingData() {
                         component="img"
                         height="400"
                         // image={listingdata.image}
-                        image={`http://localhost:8000${listingdata.image}`}
+                        image={`${server}${listingdata.image}`}
                         alt={listingdata.title}
                     />
                     <CardContent>

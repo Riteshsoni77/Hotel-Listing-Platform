@@ -13,7 +13,7 @@ export default function Card({ listing }) {
                 <img
                     className="cardImage"
                     // src={listing.image}
-                     src={`http://localhost:8000${listing.image}`}
+                     src={`${server}${listing.image}`}
                     alt={listing.title}
                 />
                 <div>
