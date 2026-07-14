@@ -4,6 +4,7 @@ import Footer from "../../conponents/includes/Footer";
 import Navbar from "../../conponents/includes/Navbar";
 import axios from "axios";
 import { Navigate, useLocation, useNavigate, useNavigationType } from "react-router-dom";
+import server from "../../../environment";
 
 export default function CreateListings() {
 
@@ -49,7 +50,7 @@ export default function CreateListings() {
                 data.append("image", formData.image);
             }
 
-            const response = await axios.post("http://localhost:8000/listings/add",
+            const response = await axios.post(`${server}/listings/add`,
                 data,
                 {
                     headers: {
