@@ -1,6 +1,7 @@
 import { Button, Card, Grid, Rating, Typography } from "@mui/material";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
+import server from "../../../environment";
 
 export default function Reviewscard({ id, review, onDelete }) {
      const authData = JSON.parse(localStorage.getItem("authData"));

@@ -14,11 +14,19 @@ export default function CreateListings() {
     const user = authData?.user;
     const token = authData?.token;
     console.log(token);
+  useEffect(() => {
     if (!token) {
         alert("You need to log in first!");
-        navigate("/user/auth", { state: { from: "/listings/add" } });
-        return;
+        navigate("/user/auth", {
+            state: { from: "/listings/add" },
+            replace: true,
+        });
     }
+}, [token, navigate]);
+
+if (!token) {
+    return null;
+}
     const [formData, setFormData] = useState({
         title: "",
         description: "",
