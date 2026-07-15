@@ -110,8 +110,8 @@ export default function ShowlistingData() {
                     <CardMedia
                         component="img"
                         height="400"
-                        // image={listingdata.image}
-                        image={`${server}${listingdata.image}`}
+                         image={listingdata.image}
+                       
                         alt={listingdata.title}
                     />
                     <CardContent>
